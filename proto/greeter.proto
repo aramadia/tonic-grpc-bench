@@ -7,12 +7,12 @@ service Greeter {
   rpc SayHello (HelloRequest) returns (HelloReply);
 }
 
-// The request message containing the user's name
+// The request message containing a number
 message HelloRequest {
-  string name = 1;
+  double value = 1;
 }
 
-// The response message containing the greeting
+// The response message containing a number
 message HelloReply {
-  string message = 1;
+  double result = 1;
 }
